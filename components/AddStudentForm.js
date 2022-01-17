@@ -14,7 +14,7 @@ function AddStudentForm({ addStudent, closeModal }) {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-name"
             type="text"
-            placeholder="e.g Samson"
+            placeholder="e.g Samson Okaludo"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />

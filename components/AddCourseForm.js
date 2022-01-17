@@ -7,7 +7,7 @@ const url = "http://student-manager-backend.herokuapp.com";
 function AddCourseForm({ addCourse, closeModal }) {
   const [isLoading, setIsLoading] = useState(false);
   const [courses, setCourses] = useState([]);
-  const [selectedCourse, setSelectedCourse] = useState("");
+  const [selectedCourseId, setSelectedCourseId] = useState("");
 
   useEffect(() => {
     setIsLoading(true);
@@ -32,11 +32,11 @@ function AddCourseForm({ addCourse, closeModal }) {
             <select
               id="grid-team-lead"
               type="text"
-              placeholder="e.g Arpitha"
+              placeholder="e.g Biology"
               required={true}
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              value={selectedCourse}
-              onChange={(e) => setSelectedCourse(e.target.value)}
+              value={selectedCourseId}
+              onChange={(e) => setSelectedCourseId(e.target.value)}
             >
               {courses.map(function (course) {
                 let { _id, name } = course;
@@ -60,7 +60,7 @@ function AddCourseForm({ addCourse, closeModal }) {
           <button
             className="bg-blue-700 hover:bg-blue-500 border-transparent h-auto text-xl font-bold py-3 px-6 text-white w-auto rounded-full"
             type="submit"
-            onClick={(e) => addCourse({ e, selectedCourse })}
+            onClick={(e) => addCourse({e,selectedCourseId})}
           >
             Save Changes
           </button>

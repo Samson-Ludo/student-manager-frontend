@@ -4,9 +4,9 @@ const LoaderGif = "https://iili.io/cQWK3x.gif";
 
 function Loader() {
   return (
-    <div>
-      <Image className="mx-auto" src={LoaderGif} alt="loading" width={200}
-      height={200}/>
+    <div className='flex flex-col justify-center items-center'>
+      <Image className="mx-auto" src={LoaderGif} alt="loading" width={1000}
+      height={500}/>
     </div>
   );
 }
