@@ -11,7 +11,7 @@ import {
 
 const url = "http://student-manager-backend.herokuapp.com";
 
-function index({id}) {
+function Index({id}) {
     const [isLoading, setIsLoading] = useState(false);
     const [allCourses, setAllCourses] = useState([]);
     const [currentStudent, setCurrentStudent] = useState({})
@@ -111,4 +111,4 @@ export async function getServerSideProps(context) {
     }
   }
 
-export default index
+export default Index
