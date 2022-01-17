@@ -60,7 +60,7 @@ function AddCourseForm({ addCourse, closeModal }) {
           <button
             className="bg-blue-700 hover:bg-blue-500 border-transparent h-auto text-xl font-bold py-3 px-6 text-white w-auto rounded-full"
             type="submit"
-            onClick={(e) => addTeam({ e, selectedCourse })}
+            onClick={(e) => addCourse({ e, selectedCourse })}
           >
             Save Changes
           </button>
