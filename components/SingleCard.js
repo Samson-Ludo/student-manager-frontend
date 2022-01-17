@@ -5,9 +5,7 @@ function SingleCard({
   name,
   group,
   numOfSubGroups,
-  openModal2,
   viewLink,
-  id,
 }) {
   return (
     <div className="h-auto mb-10">
@@ -20,14 +18,7 @@ function SingleCard({
         <p className="text-gray-700 mb-3">
           {numOfSubGroups} {group === "student" && "Courses"}
         </p>
-        <div>
-          <button
-            className="bg-blue-500 hover:bg-blue-700 border-transparent h-auto text-xl font-bold py-3 px-6 text-white hover:text-white w-auto rounded-full"
-            type="button"
-            onClick={() => openModal2(id)}
-          >
-            Update
-          </button>
+        <div> 
         </div>
       </div>
     </div>
